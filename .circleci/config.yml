@@ -1,20 +1,17 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/app-name
+    working_directory: ~/my-project
     docker:
       - image: circleci/node:6-browsers
     steps:
       - checkout
       - restore_cache:
-           key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: install-dependencies
-          command: npm install -g karma-cli
+          key: my-project-{{ .Branch }}-{{ checksum "package.json" }}
+      - run: npm install
       - save_cache:
-           key: dependency-cache-{{ checksum "package.json" }}
+          key: my-project-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
-            - ./node_modules
-      - run:
-          name: angular-test
-          command: npm test -- --single-run --no-progress
+            - "node_modules"
+      - run: xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
+      #- run: xvfb-run -a npm run e2e -- --no-progress --config=protractor-ci.conf.js
