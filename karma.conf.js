@@ -28,8 +28,7 @@ module.exports = function (config) {
       reporters: [{type: 'lcov'}]
     }, 
     preprocessors: {
-      './src/test.ts': ['@angular/cli'],
-      './src/app/*.js': ['coverage']
+      './src/test.ts': ['@angular/cli']
     },
     mime: {
       'text/x-typescript': ['ts','tsx']
