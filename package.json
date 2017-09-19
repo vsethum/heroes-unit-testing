@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "buildprod": "ng build --prod",
-    "test": "ng test",
+    "test": "karma start karma.conf.js",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "codecov": "codecov"
