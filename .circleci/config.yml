@@ -15,6 +15,6 @@ jobs:
             - "node_modules"
       - run: xvfb-run -a npm run test -- code-coverage --single-run --no-progress --browser=Chrome
       - run: npm install codecov
-      - run: npm run codecov
+      - run: npm run codecov -t d9c64e41-8e20-4878-a628-0ff5814a7611
     
       #- run: xvfb-run -a npm run e2e -- --no-progress --config=protractor-ci.conf.js
