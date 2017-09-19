@@ -19,7 +19,7 @@ module.exports = function (config) {
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessor: {
-      'src/**/*.js': ['coverage']
+      './src/**/*.js': ['coverage']
     },
   
     reporters: ['progress', 'coverage'],
