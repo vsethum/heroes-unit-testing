@@ -18,6 +18,15 @@ module.exports = function (config) {
     files: [
       { pattern: './src/test.ts', watched: false }
     ],
+    preprocessor: {
+      'src/**/*.js': ['coverage']
+    },
+  
+    reporters: ['progress', 'coverage'],
+  
+    coverageReporter: {
+      reporters: [{type: 'lcov'}]
+    }, 
     preprocessors: {
       './src/test.ts': ['@angular/cli']
     },
