@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/vsethum/heroes-unit-testing.svg?style=svg)](https://circleci.com/gh/vsethum/heroes-unit-testing)
+![Build Status](https://circleci.com/gh/vsethum/heroes-unit-testing.png?circle-token=:circle-token)
 
 # Angular Tour Of Heroes
 
