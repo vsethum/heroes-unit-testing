@@ -1,4 +1,4 @@
-![Angular + Spring Logo](src/assets/angular-plus-spring.png)
+![Build Status](https://circleci.com/gh/vsethum/heroes-unit-testing.png?circle-token=:circle-token)
 
 # Angular Tour Of Heroes
 
