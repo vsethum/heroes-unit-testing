@@ -11,7 +11,7 @@ module.exports = function (config) {
       require('@angular/cli/plugins/karma')
     ],
     client:{
-      clearContext: false // leave Jasmine Spec Runner output visible in browser
+      clearContext: true // leave Jasmine Spec Runner output visible in browser
     },
     files: [
       { pattern: './src/test.ts', watched: false }
@@ -24,8 +24,7 @@ module.exports = function (config) {
       'text/x-typescript': ['ts','tsx']
     },
     coverageReporter: {
-      type : 'lcov',
-      dir : 'coverage/'
+      reporters: [{type: 'lcov'}]
      },
     angularCli: {
       environment: 'dev'
