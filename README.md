@@ -1,4 +1,7 @@
-![Angular + Spring Logo](src/assets/angular-plus-spring.png)
+[![CircleCI](https://circleci.com/gh/vsethum/heroes-unit-testing.svg?style=svg)](https://circleci.com/gh/vsethum/heroes-unit-testing)  
+
+[![codecov.io](http://codecov.io/github/vsethum/heroes-unit-testing/coverage.svg?branch=master)](http://codecov.io/github/vsethum/heroes-unit-testing?branch=master)   
+
 
 # Angular Tour Of Heroes
 

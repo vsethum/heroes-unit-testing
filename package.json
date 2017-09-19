@@ -7,9 +7,10 @@
     "start": "ng serve",
     "build": "ng build",
     "buildprod": "ng build --prod",
-    "test": "ng test",
+    "test": "karma start karma.conf.js",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "codecov": "codecov"
   },
   "private": true,
   "dependencies": {
@@ -37,6 +38,7 @@
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
+    "karma-coverage": "^1.1.1",
     "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",

@@ -16,6 +16,7 @@ describe('HeroesComponent', () => {
     TestBed.compileComponents();
   }));
 
+  // adding to be truthy test
   it('should create the hero app', async(() => {
     const fixture = TestBed.createComponent(HeroesComponent);
     const app = fixture.debugElement.componentInstance;
