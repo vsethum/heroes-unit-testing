@@ -1,7 +1,5 @@
 [![CircleCI](https://circleci.com/gh/vsethum/heroes-unit-testing.svg?style=svg)](https://circleci.com/gh/vsethum/heroes-unit-testing)
 
-![Angular + Spring Logo](src/assets/angular-plus-spring.png)
-
 # Angular Tour Of Heroes
 
 This project takes the [Angular Tour of Heroes Tutorial](https://angular.io/docs/ts/latest/tutorial/) and combines 
