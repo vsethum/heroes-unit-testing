@@ -1,6 +1,3 @@
-// Karma configuration file, see link for more information
-// https://karma-runner.github.io/0.13/config/configuration-file.html
-
 module.exports = function (config) {
   config.set({
     basePath: '',
@@ -18,15 +15,6 @@ module.exports = function (config) {
     files: [
       { pattern: './src/test.ts', watched: false }
     ],
-    preprocessor: {
-      './src/app/*/*.js': ['coverage']
-    },
-  
-    reporters: ['progress', 'coverage'],
-  
-    coverageReporter: {
-      reporters: [{type: 'lcov'}]
-    }, 
     preprocessors: {
       './src/test.ts': ['@angular/cli']
     },
@@ -40,9 +28,7 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: config.angularCli && config.angularCli.codeCoverage
-              ? ['progress', 'coverage-istanbul']
-              : ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -50,4 +36,4 @@ module.exports = function (config) {
     browsers: ['Chrome'],
     singleRun: false
   });
-};
+ };
