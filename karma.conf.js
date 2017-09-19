@@ -23,14 +23,14 @@ module.exports = function (config) {
     mime: {
       'text/x-typescript': ['ts','tsx']
     },
-    coverageIstanbulReporter: {
-      reports: [ 'html', 'lcovonly' ],
-      fixWebpackSourcePaths: true
-    },
+    coverageReporter: {
+      type : 'lcov',
+      dir : 'coverage/'
+     },
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
