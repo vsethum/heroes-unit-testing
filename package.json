@@ -7,10 +7,11 @@
     "start": "ng serve",
     "build": "ng build",
     "buildprod": "ng build --prod",
-    "test": "karma start karma.conf.js",
+    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "protractor": "protractor"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "@angular/router": "^4.0.0",
     "angular-in-memory-web-api": "^0.3.0",
     "core-js": "^2.4.1",
+    "protractor": "^5.1.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
